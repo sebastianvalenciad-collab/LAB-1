@@ -36,3 +36,13 @@ exercises.c:59:19: error: expected expression before ‘int’
    59 |       contador += int;
       |                   ^~~
 12238e5
+Fri Mar 20 06:02:40 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:59:16: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   59 |       contador += elemento;
+      |                ^~
+c171d95
