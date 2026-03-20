@@ -46,3 +46,9 @@ exercises.c:59:16: error: assignment to ‘int’ from ‘int *’ makes integer
    59 |       contador += elemento;
       |                ^~
 c171d95
+Fri Mar 20 06:02:55 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|3
+total_score: 20/70
+ec35655
