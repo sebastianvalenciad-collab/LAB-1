@@ -26,3 +26,13 @@ Fri Mar 20 05:55:27 PM UTC 2026:
  tests:  1|4
 total_score: 10/70
 0da8719
+Fri Mar 20 06:02:19 PM UTC 2026: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:59:19: error: expected expression before ‘int’
+   59 |       contador += int;
+      |                   ^~~
+12238e5
