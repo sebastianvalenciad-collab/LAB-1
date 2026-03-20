@@ -1,0 +1,12 @@
+Fri Mar 20 05:52:07 PM UTC 2026: 
+ exercises.c | 16 +++++++++++++++-
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:80:22: error: implicit declaration of function ‘createStack’; did you mean ‘create_stack’? [-Wimplicit-function-declaration]
+   80 |    Stack* auxiliar = createStack();
+      |                      ^~~~~~~~~~~
+      |                      create_stack
+exercises.c:80:22: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+deef825
