@@ -20,3 +20,9 @@ exercises.c:80:22: error: implicit declaration of function ‘createStack’; di
       |                      create_stack
 exercises.c:80:22: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
 1995eb6
+Fri Mar 20 05:55:27 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|4
+total_score: 10/70
+0da8719
