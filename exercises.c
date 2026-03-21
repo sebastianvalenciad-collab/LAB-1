@@ -42,12 +42,14 @@ Al finalizar retorna la lista creada.
 */
 
 List* crea_lista() {
+   int contador = 1;
    List* L = create_list();
    for(int i = 0; i < 10; i++)
    {
       int *p = malloc(sizeof(int));
-      *p = i;
+      *p = contador;
       pushFront(L, p);
+      contador += 1;
    }
    return L;
 }
