@@ -64,3 +64,26 @@ Fri Mar 20 06:34:38 PM UTC 2026:
  tests:  3|2
 total_score: 40/70
 65e842d
+Sat Mar 21 09:56:48 PM UTC 2026: 
+ exercises.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:52:20: error: passing argument 2 of ‘pushFront’ makes pointer from integer without a cast [-Wint-conversion]
+   52 |       pushFront(L, *p);
+      |                    ^~
+      |                    |
+      |                    int
+In file included from exercises.c:6:
+arraylist.h:17:31: note: expected ‘void *’ but argument is of type ‘int’
+   17 | void pushFront(List *L, void *dato);
+      |                         ~~~~~~^~~~
+exercises.c:47:9: error: unused variable ‘elemento’ [-Werror=unused-variable]
+   47 |    int* elemento = first(L);
+      |         ^~~~~~~~
+exercises.c:45:8: error: unused variable ‘contador’ [-Werror=unused-variable]
+   45 |    int contador = 1;
+      |        ^~~~~~~~
+cc1: all warnings being treated as errors
+9ba73d3
