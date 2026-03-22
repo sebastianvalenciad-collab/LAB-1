@@ -138,7 +138,7 @@ int parentesisBalanceados(char *cadena) {
       }
       else if (*auxiliar == ')' || *auxiliar == ']' || *auxiliar == '}')
       {
-         if(top(pila == NULL)) return 0;
+         if(top(pila) == NULL) return 0;
 
          char *ultimo = (char*) top(pila);
 
@@ -151,6 +151,7 @@ int parentesisBalanceados(char *cadena) {
       auxiliar += 1;
    } 
 
+   if (top(pila) == NULL) return 1;
    return 0;
 }
 
