@@ -238,3 +238,19 @@ exercises.c:145:106: error: suggest parentheses around ‘&&’ within ‘||’ 
       |                                                                                         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
 cc1: all warnings being treated as errors
 fe375d9
+Sun Mar 22 12:43:17 AM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:141:22: error: passing argument 1 of ‘top’ makes pointer from integer without a cast [-Wint-conversion]
+  141 |          if(top(pila == NULL)) return 0;
+      |                      ^
+      |                      |
+      |                      int
+In file included from exercises.c:7:
+stack.h:14:18: note: expected ‘Stack *’ {aka ‘List *’} but argument is of type ‘int’
+   14 | void *top(Stack *stack) { return first(stack); }
+      |           ~~~~~~~^~~~~
+94cb8e6

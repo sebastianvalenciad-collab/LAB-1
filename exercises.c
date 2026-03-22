@@ -142,7 +142,7 @@ int parentesisBalanceados(char *cadena) {
 
          char *ultimo = (char*) top(pila);
 
-         if(*auxiliar == ')' && *ultimo != '(' || *auxiliar == ']' && *ultimo != '[' || *auxiliar == '}' && *ultimo != '{')
+         if((*auxiliar == ')' && *ultimo != '(') || (*auxiliar == ']' && *ultimo != '[') || (*auxiliar == '}' && *ultimo != '{'))
          {
             return 0;
          }
@@ -151,7 +151,7 @@ int parentesisBalanceados(char *cadena) {
       auxiliar += 1;
    } 
 
-   if(top(pila) == NULL) return 0;
+   if (top(pila) == NULL) return 0;
    return 0;
 }
 
