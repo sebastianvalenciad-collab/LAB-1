@@ -116,3 +116,32 @@ Sat Mar 21 10:01:00 PM UTC 2026:
  tests:  4|1
 total_score: 50/70
 7fdc09f
+Sun Mar 22 12:38:30 AM UTC 2026: 
+ exercises.c | 26 ++++++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:135:59: error: comparison between pointer and integer [-Werror]
+  135 |       if(*auxiliar == '(' || *auxiliar == '[' || auxiliar == '{')
+      |                                                           ^~
+exercises.c:139:65: error: comparison between pointer and integer [-Werror]
+  139 |       else if (*auxiliar == ')' || *auxiliar == ']' || auxiliar == '}')
+      |                                                                 ^~
+exercises.c:141:22: error: passing argument 1 of ‘top’ makes pointer from integer without a cast [-Wint-conversion]
+  141 |          if(top(pila == NULL)) return 0;
+      |                      ^
+      |                      |
+      |                      int
+In file included from exercises.c:7:
+stack.h:14:18: note: expected ‘Stack *’ {aka ‘List *’} but argument is of type ‘int’
+   14 | void *top(Stack *stack) { return first(stack); }
+      |           ~~~~~~~^~~~~
+exercises.c:145:30: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  145 |          if(*auxiliar == ')' && *ultimo != '(' || *auxiliar == ']' && *ultimo != '[' || *auxiliar == '}' && *ultimo != '{')
+      |             ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+exercises.c:145:106: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  145 |          if(*auxiliar == ')' && *ultimo != '(' || *auxiliar == ']' && *ultimo != '[' || *auxiliar == '}' && *ultimo != '{')
+      |                                                                                         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+c2ef4dd
